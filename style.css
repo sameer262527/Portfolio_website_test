@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Berlin Sans FB';
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+h3 {
+
+    font-family: "Oswald", sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: 'Berlin Sans FB';
+}
+
+
+
+/* ============= START HOME SECTION ============== */
+/* ======= Nav style ======= */
+.container-fluid .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 700px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-item .nav-link:hover {
+    color: orange;
+    transform: scale(0.9);
+
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    transition: transform 0.4s;
+}
+
+.nav-item .nav-link::before {
+    content: '';
+    /* Empty content for the pseudo-element */
+    position: absolute;
+    /* Position it absolutely within the parent */
+    left: 0;
+    bottom: 1px;
+    /* Adjust to position the underline correctly */
+    width: 0;
+    /* Initial width of the underline */
+    height: 2px;
+    /* Height of the underline */
+    background-color: orange;
+    transition: width 0.3s ease;
+    /* Smooth transition effect */
+}
+
+.nav-item .nav-link:hover::before {
+    width: 100%;
+}
+
+/* ======= End Nav style ======= */
+
+/************ STYLE FOR HOME SECTION ****************/
+#home {
+    min-height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+
+}
+
+.home-content {
+    min-height: 50vh;
+    max-width: 80vh;
+    margin-left: 8rem;
+    margin-top: 15rem;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    z-index: -1;
+}
+
+
+
+.featured-text-card span {
+    background: #c0a631;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.featured-text-card {
+    line-height: 4;
+}
+
+.featured h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.featured h1 span {
+    line-height: 1.2;
+}
+
+.featured .featured-text-info p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.featured-btn {
+    display: flex;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.featured-btn .btnn {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    transition: transform 0.4s;
+}
+
+.featured-btn .btnn:hover {
+    transform: scale(1.05);
+}
+
+.featured .social-icon {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 30px;
+}
+
+.featured .social-icon .icon i {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.featured .social-icon .icon a {
+    text-decoration: none;
+    transition: 0.5s, transform 0.5s ease;
+    display: inline-block;
+}
+
+.featured .social-icon .icon a:hover {
+    transform: translateY(-6px);
+}
+
+/************ END STYLE FOR HOME SECTION ****************/
+/* ============= END HOME SECTION ============== */
+
+
+
+/* media queries for responsive */
+@media (max-width: 575px) {
+
+    /* start style for home section */
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        min-height: 30vh;
+        max-width: 50vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 18rem;
+        box-sizing: border-box;
+    }
+
+    .featured h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        box-sizing: border-box;
+    }
+
+    .featured .featured-text-info p{
+        display: none;
+    }
+
+    .featured-btn {
+        padding-top: 3px;
+    }
+
+    .featured .social-icon {
+        margin-top: 1rem;
+    }
+
+    .featured .social-icon .icon i {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* end style for home section */
+}
