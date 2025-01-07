@@ -219,7 +219,7 @@ p {
     }
 
     .featured .featured-text-info p{
-        display: none;
+        font-size: 18px;
     }
 
     .featured-btn {
