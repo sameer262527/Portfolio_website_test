@@ -154,6 +154,11 @@ p {
     transition: transform 0.4s;
 }
 
+.featured-btn .btnn a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .featured-btn .btnn:hover {
     transform: scale(1.05);
 }
@@ -190,6 +195,60 @@ p {
 
 /************ END STYLE FOR HOME SECTION ****************/
 /* ============= END HOME SECTION ============== */
+
+/* ============= START ABOUT SECTION ============== */
+/************ START STYLE FOR ABOUT SECTION ****************/
+#about {
+    min-height: 50vh;
+    background-color: #ffffffeb;
+}
+
+#about .about-container {
+    min-height: 50vh;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.about-container .about-text {
+    flex: 1;
+}
+
+.about-container .about-Img img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.about-container .about-text .info{
+    background-color: #fff;
+    box-shadow: 1px 8px 10px 2px #0000001a;
+    border-radius: 20px;
+    padding: 10px;
+}
+.about-container .about-text h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container .button {
+    padding: 5px 12px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    transition: transform 0.4s;
+}
+
+.about-container .button:hover{
+    transform: scale(1.05);
+}
+
+/************ END STYLE FOR ABOUT SECTION ****************/
+/* ============= END ABOUT SECTION ============== */
 
 
 
@@ -236,4 +295,11 @@ p {
     }
 
     /* end style for home section */
+
+    /* start style for about section */
+    #about .about-container {
+        gap: 2rem;
+    }
+    
+    /* end style for about section */
 }
