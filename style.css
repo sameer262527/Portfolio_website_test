@@ -29,6 +29,15 @@ p {
     font-family: 'Berlin Sans FB';
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#9b51e0, #4a00e0);;
+    border-radius: 10px;
+}
+
 
 
 /* ============= START HOME SECTION ============== */
@@ -97,6 +106,7 @@ p {
     margin-left: 8rem;
     margin-top: 15rem;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .background {
@@ -205,11 +215,12 @@ p {
 
 #about .about-container {
     min-height: 50vh;
-    padding: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 5rem;
+    border: 1px solid red;
 }
 
 .about-container .about-text {
@@ -268,6 +279,9 @@ p {
         margin-right: 2rem;
         margin-top: 18rem;
         box-sizing: border-box;
+    }
+    .featured{
+        margin-left: 1rem;
     }
 
     .featured h1 {
